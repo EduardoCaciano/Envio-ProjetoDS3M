@@ -11,7 +11,7 @@ fun obterDiferencaEntreDatasEmAnos(dataInicio: String) : String {
 
     var dataIni = LocalDate.parse(
         dataInicio,
-        DateTimeFormatter.ofPattern("dd/MM/yyyy"))
+        DateTimeFormatter.ofPattern("dd/M/yyyy"))
 
     var idade = Period.between(dataIni, hoje)
 
